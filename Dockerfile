@@ -10,10 +10,10 @@ RUN curl -SsL https://github.com/playit-cloud/playit-agent/releases/latest/downl
 
 # Скачиваем Террарию (версия 1.4.4.9, так как 1.4.5.5 — это обычно dev-версия, 
 # если у тебя есть свой файл, просто замени ссылку ниже)
-RUN curl -L -o terraria.zip https://terraria.org/api/download/pc-dedicated-server/terraria-server-1449.zip \
+RUN curl -L -o terraria.zip https://terraria.org/api/download/pc-dedicated-server/terraria-server-1455.zip \
     && unzip terraria.zip -d terraria \
     && rm terraria.zip \
-    && mv terraria/1449/Linux /app/server \
+    && mv terraria/1455/Linux /app/server \
     && chmod +x /app/server/TerrariaServer.bin.x86_64
 
 # Создаем стартовый скрипт
